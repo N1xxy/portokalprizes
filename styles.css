@@ -62,10 +62,14 @@ header {
     .menu-toggle {
         display: block; /* Show menu button on mobile */
     }
-    iframe{
-    width: 500px;
-    height: 600px;
-}
+    #google_form_container {
+        width: 100%; /* Make it stretch across the screen */
+        padding: 0 10px;
+    }
+    
+    #google_form_container iframe {
+        height: 90vh;
+    }
 }
 
 header .logo h1 {
@@ -251,7 +255,14 @@ footer {
     color: white;
     width: 100%;
 }   
-iframe{
-    width: 500px;
-    height: 600px;
+#google_form_container {
+    width: 100%; /* Make it stretch across the screen */
+    max-width: 600px; /* Adjust max width for better readability */
+    margin: 0 auto; /* Center it */
+}
+
+#google_form_container iframe {
+    width: 100%; /* Ensures the form takes full width of the container */
+    height: 100vh; /* Adjust height for better visibility */
+    min-height: 600px; /* Prevents it from being too small */
 }
