@@ -18,12 +18,51 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #222;
-    color: white;
-    width: 100%;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;   
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Initially hide */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        background: #333;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.show {
+        display: flex; /* Show when menu is active */
+    }
+
+    .menu-toggle {
+        display: block; /* Show menu button on mobile */
+    }
+}
 
 header .logo h1 {
     font-size: 1.8rem;
@@ -209,5 +248,5 @@ footer {
     width: 100%;
 }   
 iframe{
-    max-width: 100%;
+    width: 30%;
 }
