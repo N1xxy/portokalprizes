@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    
 }
 
 body {
@@ -20,6 +21,7 @@ header {
     padding: 1rem 2rem;
     background-color: #222;
     color: white;
+    width: 100%;
 }
 
 
@@ -51,6 +53,7 @@ nav ul li a:hover{
     padding: 4rem 2rem;
     background-image: url(https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg);
     color: #333;
+    width: 100%;
 }
 #hero_bgr{
     background-color: #f8f2f29e;
@@ -87,6 +90,7 @@ nav ul li a:hover{
 #plaques {
     text-align: center;
     padding: 3rem 2rem;
+    width: 100%;
 }
 
 .plaque-categories {
@@ -95,6 +99,7 @@ nav ul li a:hover{
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
+    width: 100%;
 }
 .plaque-categories article:hover {
     transform: scale(1.05);
@@ -120,6 +125,7 @@ nav ul li a:hover{
 #gallery {
     text-align: center;
     padding: 3rem 2rem;
+    width: 100%;
 }
 
 .gallery-grid {
@@ -141,6 +147,7 @@ nav ul li a:hover{
 
 /* Contact Section */
 #contact {
+    width: 100%;
     text-align: center;
     padding: 3rem 2rem;
     background: #f1f1f1;
@@ -174,6 +181,7 @@ button {
 #socials {
     text-align: center;
     padding: 2rem;
+    width: 100%;
 }
 
 #socials ul {
@@ -198,7 +206,8 @@ footer {
     padding: 1rem;
     background: #222;
     color: white;
+    width: 100%;
 }   
-iframe {
+iframe{
     max-width: 100%;
 }
