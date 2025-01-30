@@ -199,3 +199,6 @@ footer {
     background: #222;
     color: white;
 }   
+iframe {
+    max-width: 100%;
+}
