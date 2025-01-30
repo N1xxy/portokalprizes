@@ -1,0 +1,201 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #222;
+    color: white;
+}
+
+
+header .logo h1 {
+    font-size: 1.8rem;
+    color:#f37922;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #f37922;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-image: url(https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg);
+    color: #333;
+}
+#hero_bgr{
+    background-color: #f8f2f29e;
+    max-width: fit-content;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 12px;
+
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+}
+
+#hero p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #f37922;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.btn:hover {
+    background: #f16322;
+}
+/* Plaques Section */
+#plaques {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.plaque-categories {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.plaque-categories article:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.plaque-categories article {
+    background: white;
+    padding: 1.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 250px;
+}
+.plaque-categories article img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top:20px;
+}
+
+/* Gallery */
+#gallery {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 2rem 0;
+    
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+}
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #f1f1f1;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Social Media Section */
+#socials {
+    text-align: center;
+    padding: 2rem;
+}
+
+#socials ul {
+    list-style: none;
+    padding: 0;
+}
+
+#socials ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+#socials ul li a {
+    text-decoration: none;
+    color: #ff5733;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: white;
+}   
